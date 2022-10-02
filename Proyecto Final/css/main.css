@@ -1,0 +1,61 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+@import url("./fonts.css");
+
+/* General styles */
+* {
+  font-family: "Inter";
+}
+
+.bg-orange {
+  background-color: orange;
+}
+
+.text-orange {
+  color: orange;
+}
+
+input {
+  border: 1px solid transparent !important;
+}
+
+input:focus {
+  border: .050rem solid orange !important;
+}
+
+.bg-dark2 {
+  background-color: #2d3238!important
+}
+
+.rounded-6 {
+  border-radius: 6px;
+}
+
+/* Nav styles */
+.nav-tabs .nav-link {
+  border: 0px solid transparent;
+  border-radius: 4px;
+}
+
+.nav-item {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.nav-tabs .nav-link.active {
+  color: orange !important;
+  border: 0px solid transparent;
+  background-color: rgba(83, 83, 83, 0.671);
+}
+
+.nav-link:hover {
+  background-color: rgba(83, 83, 83, 0.671);
+}
+
+.navbar-toggler-icon {
+  color: black;
+}
+
+/* Song's Cards styles */
+.card-img-top {
+  width: 50% !important;
+}

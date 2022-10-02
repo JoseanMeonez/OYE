@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>OYE</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" href="./imagenes/logo.png" type="image/x-icon">
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+
+  </head>
+  
+  <body class="bg-dark">   
+    
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0">
+          <div class="modal-header bg-dark text-white border-0">
+            <h5 class="modal-title col-12 text-center" id="staticBackdropLabel">Acerca de</h5>
+          </div>
+          <div class="modal-body text-light bg-dark2">
+            <h6>Desarrollador:</h6>
+            <p>Andrés Meóñez</p>
+            <h6>Correo del Contacto:</h6>
+            <p>joseanmeonez@gmail.com</p>
+            <h6>Versión del Software:</h6>
+            <p>0.0.1</p>
+          </div>
+          <div class="modal-footer bg-dark2 border-0">
+            <button type="button" class="btn btn-dark bg-orange border-0 d-grid gap-2 col-2 mx-auto" data-bs-dismiss="modal">Ok</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar nav-tabs navbar-expand-lg navbar-dark bg-dark2 fixed-top border-0 shadow">
+      <div class="container">
+        <span class="navbar-brand fw-bold">
+          <img src="./imagenes/logo.png" alt="OYE" width="30%">
+          OYE
+        </span>
+        <button class="btn btn-secondary d-lg-none text-light fw-bold rounded-6" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi-chevron-down"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <!-- Nav tabs -->
+          <ul class="nav navbar-nav me-auto mt-2 mt-lg-0 text-center" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link dropdown-item active" id="index-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Inicio</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link dropdown-item" id="songs-tab" data-bs-toggle="tab" data-bs-target="#songs" type="button" role="tab" aria-controls="songs" aria-selected="false">Canciones</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link dropdown-item" id="register-tab" data-bs-toggle="tab" data-bs-target="#register" type="button" role="tab" aria-controls="register" aria-selected="false">Registrar</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link dropdown-item" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="login" aria-selected="false">Iniciar Sesión</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <!-- Button trigger modal -->
+              <button type="button" class="nav-link dropdown-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <i class="text-orangered bi-info-circle-fill"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Tab panes -->
+    <div class="tab-content p-3">
+      <div class="tab-pane show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+      </div>
+      
+      <div class="tab-pane" id="songs" role="tabpanel" aria-labelledby="songs-tab">
+        <br><br><br>
+        <div class="row row-cols-1 row-cols-md-4 g-4" id="songs-card-group">
+          <div class="col" id="songs-card-item" hidden></div>
+        </div>
+      </div>
+
+      <div class="tab-pane" id="register" role="tabpanel" aria-labelledby="register-tab">
+        <br><br><br>
+      </div>
+      
+      <div class="tab-pane" id="login" role="tabpanel" aria-labelledby="login-tab">
+        <br><br><br>
+        <form action="#" class="floating container-sm col-12 text-center bg-dark2 rounded-6 p-5 shadow">
+          <h1 class="text-orange mb-4">Iniciar Sesión</h1>
+          <div class="form-floating mb-3 text-light">
+            <input type="email" class="form-control bg-dark text-light shadow" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating text-light">
+            <input type="password" class="form-control form-control bg-dark text-light shadow" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+          </div>
+        </form>
+      </div>
+    </div>
+      
+  </body>
+    <!-- Own Javascript -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/main.js"></script>
+</html>
